@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Prestige Properties</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/sections.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                Prestige<span class="text-gold">Properties</span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle"><i class="ph ph-list"></i></div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link btn btn-accent">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header section text-center"
+        style="background-color: var(--color-bg-light); padding-top: 8rem;">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p class="text-light">Redefining real estate management in Nigeria with integrity and excellence.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="d-flex" style="flex-wrap: wrap; gap: 4rem; align-items: center;">
+                <div style="flex: 1 1 400px;">
+                    <h2 class="text-primary">Who We Are</h2>
+                    <p style="margin-bottom: 1.5rem;">Prestige Properties was founded with a single mission: to provide
+                        a stress-free, transparent, and profitable real estate experience for property owners and
+                        investors, both in Nigeria and the Diaspora.</p>
+                    <p style="margin-bottom: 1.5rem;">We understand the unique challenges of the Nigerian real estate
+                        market. From documentation hurdles to maintenance headaches, our team of experts handles it all
+                        so you don't have to.</p>
+                    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+                        <div>
+                            <h3 style="color: var(--color-accent); font-size: 2.5rem; margin-bottom: 0;">10+</h3>
+                            <p class="text-light">Years Experience</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--color-accent); font-size: 2.5rem; margin-bottom: 0;">500+</h3>
+                            <p class="text-light">Properties Managed</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="flex: 1 1 400px; height: 400px;">
+                    <img src="assets/office-exterior.png" alt="Our Office"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius-md);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section Reuse -->
+    <section class="section services-section">
+        <div class="container">
+            <h2 class="text-primary">Our Core Values</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="ph ph-handshake service-icon"></i>
+                    <h3 class="service-title">Integrity</h3>
+                    <p class="service-text">We believe in absolute transparency in all our dealings. No hidden fees, no
+                        ambiguous jargon.</p>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-star service-icon"></i>
+                    <h3 class="service-title">Excellence</h3>
+                    <p class="service-text">We do not settle for mediocrity. We strive for perfection in every service
+                        we deliver.</p>
+                </div>
+                <div class="service-card">
+                    <i class="ph ph-users service-icon"></i>
+                    <h3 class="service-title">Client Focus</h3>
+                    <p class="service-text">Your goals are our priority. We tailor our strategies to meet your specific
+                        investment objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">&copy; 2025 Prestige Properties. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

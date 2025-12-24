@@ -1,0 +1,75 @@
+:root {
+  /* ------------------------------
+     Color Palette - Industry Standard 2025
+     Target: Nigeria & Diaspora Market (Trust, Luxury, Stability)
+     ------------------------------ */
+  
+  /* Primary - Deep Royal Blue: Trust, Authority, Corporate Professionalism */
+  --color-primary: #0A2540; 
+  --color-primary-light: #183B5E;
+  --color-primary-dark: #051626;
+
+  /* Accent - Metallic Gold: Premium, Luxury, High-Value */
+  --color-accent: #C5A059;
+  --color-accent-light: #D4B475;
+  --color-accent-dark: #A38243;
+
+  /* Neutrals */
+  --color-text-main: #2D3748;   /* Soft Charcoal for body text */
+  --color-text-light: #718096;  /* Slate gray for secondary text */
+  --color-bg-body: #FFFFFF;     /* Pure White */
+  --color-bg-light: #F7FAFC;    /* Off-white/Light Gray for section backgrounds */
+  --color-bg-dark: #1A202C;     /* Very dark gray for footers */
+  --color-border: #E2E8F0;      /* Light border color */
+
+  /* Functional Colors */
+  --color-success: #38A169;
+  --color-error: #E53E3E;
+  --color-white: #FFFFFF;
+
+  /* ------------------------------
+     Typography
+     ------------------------------ */
+  --font-heading: 'Playfair Display', serif; /* Elegant, Premium */
+  --font-body: 'Inter', sans-serif;          /* Modern, Clean, Legible */
+
+  --text-xs: 0.75rem;   /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-base: 1rem;    /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+  --text-2xl: 1.5rem;   /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem;  /* 36px */
+  --text-5xl: 3rem;     /* 48px */
+
+  /* ------------------------------
+     Spacing & Layout
+     ------------------------------ */
+  --container-width: 1200px;
+  --container-padding: 2rem;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* ------------------------------
+     Shadows
+     ------------------------------ */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* ------------------------------
+     Transitions
+     ------------------------------ */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}

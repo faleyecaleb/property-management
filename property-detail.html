@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details | Prestige Properties</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/property-detail.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                Prestige<span class="text-gold">Properties</span>
+            </a>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link btn btn-accent">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="section detail-page">
+        <div class="container">
+
+            <!-- Breadcrumb / Back -->
+            <a href="properties.html" class="back-link"><i class="ph ph-arrow-left"></i> Back to Properties</a>
+
+            <!-- Header Info -->
+            <div class="property-header">
+                <div>
+                    <h1 id="prop-title">Loading...</h1>
+                    <p class="property-location" id="prop-location"><i class="ph ph-map-pin"></i> ...</p>
+                </div>
+                <div class="property-price-tag" id="prop-price">...</div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="property-gallery">
+                <div class="main-image">
+                    <img id="prop-main-img" src="" alt="Main Property Image">
+                </div>
+                <div class="sub-images">
+                    <img src="assets/bedroom-1.png" alt="Bedroom">
+                    <img src="assets/bathroom-1.png" alt="Bathroom">
+                    <img src="assets/kitchen-1.png" alt="Kitchen">
+                </div>
+            </div>
+
+            <div class="property-content-layout">
+
+                <!-- Main Details -->
+                <div class="property-info">
+
+                    <div class="key-features" id="prop-features">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div class="description">
+                        <h3>Description</h3>
+                        <p>Experience luxury living in this stunning property. Designed with modern aesthetics and
+                            functionality in mind, this home offers spacious interiors, premium finishes, and a serene
+                            environment. Perfect for those who appreciate quality and elegance.</p>
+                        <p>Features include a state-of-the-art kitchen, en-suite bedrooms, ample parking space, and 24/7
+                            security. Located in a prime neighborhood with easy access to major business districts and
+                            leisure centers.</p>
+                    </div>
+
+                    <div class="amenities">
+                        <h3>Amenities</h3>
+                        <ul class="amenities-list">
+                            <li><i class="ph ph-check-circle"></i> Swimming Pool</li>
+                            <li><i class="ph ph-check-circle"></i> 24/7 Power</li>
+                            <li><i class="ph ph-check-circle"></i> Gym / Fitness Center</li>
+                            <li><i class="ph ph-check-circle"></i> Boys Quarters (BQ)</li>
+                            <li><i class="ph ph-check-circle"></i> CCTV Security</li>
+                            <li><i class="ph ph-check-circle"></i> Fitted Kitchen</li>
+                            <li><i class="ph ph-check-circle"></i> Water Treatment</li>
+                            <li><i class="ph ph-check-circle"></i> High-Speed Internet</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar Form -->
+                <aside class="property-sidebar">
+                    <div class="contact-card">
+                        <h3>Interested in this property?</h3>
+                        <p class="text-light">Fill out the form below to schedule a viewing or request more info.</p>
+
+                        <form class="inquiry-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <textarea placeholder="Message (I'm interested in...)" rows="4"></textarea>
+                            <button type="submit" class="btn btn-primary w-100">Send Inquiry</button>
+                        </form>
+
+                        <div class="agent-info">
+                            <img src="https://ui-avatars.com/api/?name=Agent+Smith&background=0D8ABC&color=fff"
+                                alt="Agent">
+                            <div>
+                                <strong>Prestige Agent</strong>
+                                <a href="tel:+2348000000000">+234 800 000 0000</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">&copy; 2025 Prestige Properties. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script> <!-- Reusing data source -->
+    <script src="js/property-detail.js"></script>
+</body>
+
+</html>

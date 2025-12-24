@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties For Sale & Rent | Prestige Properties</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/pages/properties.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                Prestige<span class="text-gold">Properties</span>
+            </a>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="properties.html" class="nav-link active">Properties</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link btn btn-accent">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Title -->
+    <section class="page-header section text-center"
+        style="background-color: var(--color-bg-light); padding-top: 8rem;">
+        <div class="container">
+            <h1>Our Exclusive Listings</h1>
+            <p class="text-light">Discover the finest properties available in Nigeria.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container properties-layout">
+
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3>Filter Properties</h3>
+                    <form id="filter-form">
+
+                        <!-- Search -->
+                        <div class="filter-item">
+                            <label for="search">Keywords</label>
+                            <input type="text" id="search" placeholder="e.g. Lekki, Pool...">
+                        </div>
+
+                        <!-- Type -->
+                        <div class="filter-item">
+                            <label for="type">Property Type</label>
+                            <select id="type">
+                                <option value="all">All Types</option>
+                                <option value="house">House / Villa</option>
+                                <option value="apartment">Apartment / Flat</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="land">Land</option>
+                            </select>
+                        </div>
+
+                        <!-- Status -->
+                        <div class="filter-item">
+                            <label for="status">Status</label>
+                            <select id="status">
+                                <option value="all">Any Status</option>
+                                <option value="sale">For Sale</option>
+                                <option value="rent">For Rent</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="filter-item">
+                            <label>Price Range (₦)</label>
+                            <div class="d-flex gap-2">
+                                <input type="number" id="min-price" placeholder="Min" style="width: 50%;">
+                                <input type="number" id="max-price" placeholder="Max" style="width: 50%;">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100" style="margin-top: 1rem;">Apply
+                            Filters</button>
+                    </form>
+                </div>
+            </aside>
+
+            <!-- Grid -->
+            <div class="properties-grid-container">
+                <div class="grid" id="properties-grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- JS will populate this -->
+                    <p class="text-center w-100">Loading properties...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">&copy; 2025 Prestige Properties. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+
+</html>

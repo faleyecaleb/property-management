@@ -13,19 +13,34 @@ function initNavbar() {
     const navMenu = document.getElementById('nav-menu');
 
     // Sticky Navbar on Scroll
-    window.addEventListener('scroll', () => {
+    // Sticky Navbar on Scroll
+    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+
+    if (isHomePage) {
+        // Initial check
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    } else {
+        // For other pages, ensure it's always scrolled (solid background)
+        navbar.classList.add('scrolled');
+    }
 
     // Mobile Menu Toggle
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            
+
             // Icon toggle
             const icon = navToggle.querySelector('i');
             if (navMenu.classList.contains('active')) {

@@ -29,8 +29,14 @@
     padding: 1rem 0;
 }
 
+.navbar.scrolled .logo,
+.navbar.scrolled .nav-link {
+    color: var(--color-text-main);
+}
+
 .navbar.scrolled .logo .text-gold {
-    /* Optionally darken gold on white bg if needed, but gold usually looks good */
+    color: var(--color-accent-dark);
+    /* darker gold for better contrast on white */
 }
 
 .navbar-container {

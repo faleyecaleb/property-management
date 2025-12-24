@@ -23,9 +23,11 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom,
-            rgba(10, 37, 64, 0.4),
-            /* Primary color tint */
-            rgba(10, 37, 64, 0.7));
+            rgba(10, 37, 64, 0.6),
+            /* Increased darkness from 0.4 */
+            rgba(10, 37, 64, 0.8)
+            /* Increased darkness from 0.7 */
+        );
     z-index: 1;
 }
 
@@ -40,14 +42,19 @@
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    color: #ffffff !important;
+    /* Stronger shadow */
 }
 
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
-    opacity: 0.9;
-    font-weight: 300;
+    opacity: 1;
+    /* Fully opaque */
+    font-weight: 400;
+    /* Slightly bolder */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
